@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Suitefb]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="FirefoxTest(failed)">
+    <parameter name="browser" value="FireFox"/>
+    <classes>
+      <class name="temptestpack.VerifysearchButtonOnDeveloperspage">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="verifySearchButtonFunction"/>
+          <include name="createPOMObjects"/>
+          <include name="cleanPOMObjects"/>
+          <include name="verifyprivacyandpolicy"/>
+          <include name="logoutFromApplication"/>
+          <include name="closedBrowser"/>
+          <include name="OpenDeveloprspage"/>
+        </methods>
+      </class> <!-- temptestpack.VerifysearchButtonOnDeveloperspage -->
+      <class name="temptestpack.VerifyRoomspage">
+        <methods>
+          <include name="verifyContactToHelpCenterButton"/>
+          <include name="closeBrowser"/>
+          <include name="openRoomspage"/>
+          <include name="launchBrowser"/>
+          <include name="createPOMObjects"/>
+          <include name="verifyGoBackToMessangerButton"/>
+          <include name="logoutFromApplication"/>
+          <include name="CleanPOMObjects"/>
+        </methods>
+      </class> <!-- temptestpack.VerifyRoomspage -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suitefb] -->

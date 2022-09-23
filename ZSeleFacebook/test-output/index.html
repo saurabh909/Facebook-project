@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suitefb" class="navigator-link">
+              <span class="suite-name border-passed">Suitefb</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suitefb" class="navigator-link ">
+                    <span>C:\Users\Saurabh Zend\eclipse-workspace\ZSeleFacebook\regression.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suitefb" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suitefb" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suitefb" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suitefb" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suitefb" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suitefb" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suitefb" class="hide-methods passed suite-Suitefb"> (hide)</a> <!-- hide-methods passed suite-Suitefb -->
+                      <a href="#" panel-name="suite-Suitefb" class="show-methods passed suite-Suitefb"> (show)</a> <!-- show-methods passed suite-Suitefb -->
+                    </span>
+                    <div class="method-list-content passed suite-Suitefb">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suitefb" title="temptestpack.VerifyRoomspage" class="method navigator-link" hash-for-method="verifyContactToHelpCenterButton">verifyContactToHelpCenterButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suitefb" title="temptestpack.VerifyRoomspage" class="method navigator-link" hash-for-method="verifyContactToHelpCenterButton">verifyContactToHelpCenterButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suitefb" title="temptestpack.VerifyRoomspage" class="method navigator-link" hash-for-method="verifyGoBackToMessangerButton">verifyGoBackToMessangerButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suitefb" title="temptestpack.VerifyRoomspage" class="method navigator-link" hash-for-method="verifyGoBackToMessangerButton">verifyGoBackToMessangerButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suitefb" title="temptestpack.VerifysearchButtonOnDeveloperspage" class="method navigator-link" hash-for-method="verifySearchButtonFunction">verifySearchButtonFunction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suitefb" title="temptestpack.VerifysearchButtonOnDeveloperspage" class="method navigator-link" hash-for-method="verifySearchButtonFunction">verifySearchButtonFunction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suitefb" title="temptestpack.VerifysearchButtonOnDeveloperspage" class="method navigator-link" hash-for-method="verifyprivacyandpolicy">verifyprivacyandpolicy</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suitefb" title="temptestpack.VerifysearchButtonOnDeveloperspage" class="method navigator-link" hash-for-method="verifyprivacyandpolicy">verifyprivacyandpolicy</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suitefb -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suitefb" class="panel Suitefb">
+          <div class="suite-Suitefb-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">temptestpack.VerifysearchButtonOnDeveloperspage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchButtonFunction">
+                  </a> <!-- verifySearchButtonFunction -->
+                  <span class="method-name">verifySearchButtonFunction</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchButtonFunction">
+                  </a> <!-- verifySearchButtonFunction -->
+                  <span class="method-name">verifySearchButtonFunction</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyprivacyandpolicy">
+                  </a> <!-- verifyprivacyandpolicy -->
+                  <span class="method-name">verifyprivacyandpolicy</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyprivacyandpolicy">
+                  </a> <!-- verifyprivacyandpolicy -->
+                  <span class="method-name">verifyprivacyandpolicy</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suitefb-class-passed -->
+          <div class="suite-Suitefb-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">temptestpack.VerifyRoomspage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyContactToHelpCenterButton">
+                  </a> <!-- verifyContactToHelpCenterButton -->
+                  <span class="method-name">verifyContactToHelpCenterButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyContactToHelpCenterButton">
+                  </a> <!-- verifyContactToHelpCenterButton -->
+                  <span class="method-name">verifyContactToHelpCenterButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGoBackToMessangerButton">
+                  </a> <!-- verifyGoBackToMessangerButton -->
+                  <span class="method-name">verifyGoBackToMessangerButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGoBackToMessangerButton">
+                  </a> <!-- verifyGoBackToMessangerButton -->
+                  <span class="method-name">verifyGoBackToMessangerButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suitefb-class-passed -->
+        </div> <!-- panel Suitefb -->
+        <div panel-name="test-xml-Suitefb" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Saurabh Zend\eclipse-workspace\ZSeleFacebook\regression.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;4&quot; parallel=&quot;classes&quot; name=&quot;Suitefb&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;classes&quot; name=&quot;ChromeTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;temptestpack.VerifyRoomspage&quot;/&gt;
+      &lt;class name=&quot;temptestpack.VerifysearchButtonOnDeveloperspage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;classes&quot; name=&quot;FirefoxTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;FireFox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;temptestpack.VerifyRoomspage&quot;/&gt;
+      &lt;class name=&quot;temptestpack.VerifysearchButtonOnDeveloperspage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- FirefoxTest --&gt;
+&lt;/suite&gt; &lt;!-- Suitefb --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suitefb" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suitefb</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ChromeTest (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">FirefoxTest (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suitefb" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suitefb</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suitefb" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suitefb</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suitefb');
+function tableData_Suitefb() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyprivacyandpolicy')
+data.setCell(0, 2, 'temptestpack.VerifysearchButtonOnDeveloperspage')
+data.setCell(0, 3, 11651);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyprivacyandpolicy')
+data.setCell(1, 2, 'temptestpack.VerifysearchButtonOnDeveloperspage')
+data.setCell(1, 3, 8287);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifySearchButtonFunction')
+data.setCell(2, 2, 'temptestpack.VerifysearchButtonOnDeveloperspage')
+data.setCell(2, 3, 4006);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyContactToHelpCenterButton')
+data.setCell(3, 2, 'temptestpack.VerifyRoomspage')
+data.setCell(3, 3, 3485);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyGoBackToMessangerButton')
+data.setCell(4, 2, 'temptestpack.VerifyRoomspage')
+data.setCell(4, 3, 2862);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifySearchButtonFunction')
+data.setCell(5, 2, 'temptestpack.VerifysearchButtonOnDeveloperspage')
+data.setCell(5, 3, 2331);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyGoBackToMessangerButton')
+data.setCell(6, 2, 'temptestpack.VerifyRoomspage')
+data.setCell(6, 3, 2074);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyContactToHelpCenterButton')
+data.setCell(7, 2, 'temptestpack.VerifyRoomspage')
+data.setCell(7, 3, 2008);
+window.suiteTableData['Suitefb']= { tableData: data, tableDiv: 'times-div-Suitefb'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 36 seconds</span>
+              <div id="times-div-Suitefb">
+              </div> <!-- times-div-Suitefb -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suitefb" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suitefb</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suitefb" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suitefb" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">temptestpack.VerifyRoomspage</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">launchBrowser(Chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">temptestpack.VerifysearchButtonOnDeveloperspage</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">launchBrowser(Chrome)</span>
+                <span class="method-start">2464 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">createPOMObjects</span>
+                <span class="method-start">5276 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">temptestpack.VerifyRoomspage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createPOMObjects</span>
+                <span class="method-start">5276 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">temptestpack.VerifysearchButtonOnDeveloperspage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">OpenDeveloprspage</span>
+                <span class="method-start">5340 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">temptestpack.VerifyRoomspage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openRoomspage</span>
+                <span class="method-start">5340 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyContactToHelpCenterButton</span>
+                <span class="method-start">13033 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutFromApplication</span>
+                <span class="method-start">15049 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openRoomspage</span>
+                <span class="method-start">15051 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">temptestpack.VerifysearchButtonOnDeveloperspage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifySearchButtonFunction</span>
+                <span class="method-start">18692 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">temptestpack.VerifyRoomspage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyGoBackToMessangerButton</span>
+                <span class="method-start">20468 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">temptestpack.VerifysearchButtonOnDeveloperspage</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutFromApplication</span>
+                <span class="method-start">21027 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">OpenDeveloprspage</span>
+                <span class="method-start">21028 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">temptestpack.VerifyRoomspage</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutFromApplication</span>
+                <span class="method-start">23332 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">CleanPOMObjects</span>
+                <span class="method-start">23335 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">temptestpack.VerifysearchButtonOnDeveloperspage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyprivacyandpolicy</span>
+                <span class="method-start">27069 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutFromApplication</span>
+                <span class="method-start">38722 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">cleanPOMObjects</span>
+                <span class="method-start">38725 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">temptestpack.VerifyRoomspage</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">38727 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">temptestpack.VerifysearchButtonOnDeveloperspage</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closedBrowser</span>
+                <span class="method-start">40137 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">temptestpack.VerifyRoomspage</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">launchBrowser(FireFox)</span>
+                <span class="method-start">40396 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">temptestpack.VerifysearchButtonOnDeveloperspage</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">launchBrowser(FireFox)</span>
+                <span class="method-start">50748 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">temptestpack.VerifyRoomspage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createPOMObjects</span>
+                <span class="method-start">60860 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">openRoomspage</span>
+                <span class="method-start">60865 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">temptestpack.VerifysearchButtonOnDeveloperspage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createPOMObjects</span>
+                <span class="method-start">60865 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">OpenDeveloprspage</span>
+                <span class="method-start">60870 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">temptestpack.VerifyRoomspage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyContactToHelpCenterButton</span>
+                <span class="method-start">75238 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutFromApplication</span>
+                <span class="method-start">78725 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openRoomspage</span>
+                <span class="method-start">78726 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyGoBackToMessangerButton</span>
+                <span class="method-start">83464 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutFromApplication</span>
+                <span class="method-start">85540 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">CleanPOMObjects</span>
+                <span class="method-start">85542 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">temptestpack.VerifysearchButtonOnDeveloperspage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifySearchButtonFunction</span>
+                <span class="method-start">85599 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutFromApplication</span>
+                <span class="method-start">89607 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">OpenDeveloprspage</span>
+                <span class="method-start">89608 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyprivacyandpolicy</span>
+                <span class="method-start">95758 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutFromApplication</span>
+                <span class="method-start">104049 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">cleanPOMObjects</span>
+                <span class="method-start">104050 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">temptestpack.VerifyRoomspage</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">104054 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">temptestpack.VerifysearchButtonOnDeveloperspage</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closedBrowser</span>
+                <span class="method-start">105885 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
