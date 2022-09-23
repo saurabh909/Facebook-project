@@ -18,6 +18,10 @@ public class Base {
 		 return driver;
 		
 	}
+	//public static WebDriver openFireFoxBrowser() {
+		 //System.setProperty("webdriver.gecko.driver", "C:\\Users\\Saurabh Zend\\Desktop\\selinum\\geckodriver.exe"); 
+		// WebDriver driver = new FirefoxDriver();
+		// return driver;
 	
 
 }
