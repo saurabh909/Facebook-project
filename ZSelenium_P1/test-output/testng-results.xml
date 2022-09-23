@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-21T17:41:18 IST" name="Suite2212" finished-at="2022-09-21T17:43:16 IST" duration-ms="118090">
+    <groups>
+    </groups>
+    <test started-at="2022-09-21T17:41:18 IST" name="ChromeTest" finished-at="2022-09-21T17:43:16 IST" duration-ms="118090">
+      <class name="amazontestpack.SecondVerifivationmobile">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:amazontestpack.SecondVerifivationmobile@294425a7]" started-at="2022-09-21T17:41:21 IST" name="launchBrowser" finished-at="2022-09-21T17:41:22 IST" duration-ms="1674" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="CreratePOMObjects()[pri:0, instance:amazontestpack.SecondVerifivationmobile@294425a7]" started-at="2022-09-21T17:41:22 IST" name="CreratePOMObjects" finished-at="2022-09-21T17:41:23 IST" duration-ms="239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreratePOMObjects -->
+        <test-method is-config="true" signature="beforemethodpages()[pri:0, instance:amazontestpack.SecondVerifivationmobile@294425a7]" started-at="2022-09-21T17:41:23 IST" name="beforemethodpages" finished-at="2022-09-21T17:43:00 IST" duration-ms="97471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethodpages -->
+        <test-method signature="VerifySamsungStoreFunctionality()[pri:0, instance:amazontestpack.SecondVerifivationmobile@294425a7]" started-at="2022-09-21T17:43:00 IST" name="VerifySamsungStoreFunctionality" finished-at="2022-09-21T17:43:02 IST" duration-ms="1997" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=105.0.5195.127)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SAURABH', ip: '192.168.28.28', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\SAURAB~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58285}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5974a43beeaebca3ac4923c6a79f89c1
+*** Element info: {Using=xpath, value=//span[text()='Samsung Galaxy M21 2021 Edition (Arctic Blue, 4GB RAM, 64GB Storage) | FHD+ sAMOLED | 6 Months Free Screen Replacement for Prime (SM-M215GLBDINS)']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=105.0.5195.127)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SAURABH', ip: '192.168.28.28', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\SAURAB~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58285}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5974a43beeaebca3ac4923c6a79f89c1
+*** Element info: {Using=xpath, value=//span[text()='Samsung Galaxy M21 2021 Edition (Arctic Blue, 4GB RAM, 64GB Storage) | FHD+ sAMOLED | 6 Months Free Screen Replacement for Prime (SM-M215GLBDINS)']}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at Amazon.Samsungm21.ClickonSamsungM21(Samsungm21.java:22)
+at amazontestpack.SecondVerifivationmobile.VerifySamsungStoreFunctionality(SecondVerifivationmobile.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySamsungStoreFunctionality -->
+        <test-method is-config="true" signature="Logoutfromapplication()[pri:0, instance:amazontestpack.SecondVerifivationmobile@294425a7]" started-at="2022-09-21T17:43:02 IST" name="Logoutfromapplication" finished-at="2022-09-21T17:43:02 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logoutfromapplication -->
+        <test-method is-config="true" signature="CleanPOMObjects()[pri:0, instance:amazontestpack.SecondVerifivationmobile@294425a7]" started-at="2022-09-21T17:43:02 IST" name="CleanPOMObjects" finished-at="2022-09-21T17:43:02 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CleanPOMObjects -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:amazontestpack.SecondVerifivationmobile@294425a7]" started-at="2022-09-21T17:43:15 IST" name="closeBrowser" finished-at="2022-09-21T17:43:16 IST" duration-ms="620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- amazontestpack.SecondVerifivationmobile -->
+      <class name="amazontestpack.Finalmobileverification">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:amazontestpack.Finalmobileverification@6572421]" started-at="2022-09-21T17:41:18 IST" name="launchBrowser" finished-at="2022-09-21T17:41:21 IST" duration-ms="3118" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="CreratePOMObjects()[pri:0, instance:amazontestpack.Finalmobileverification@6572421]" started-at="2022-09-21T17:41:22 IST" name="CreratePOMObjects" finished-at="2022-09-21T17:41:23 IST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreratePOMObjects -->
+        <test-method is-config="true" signature="beforemethodpages()[pri:0, instance:amazontestpack.Finalmobileverification@6572421]" started-at="2022-09-21T17:41:23 IST" name="beforemethodpages" finished-at="2022-09-21T17:42:26 IST" duration-ms="63238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethodpages -->
+        <test-method signature="Verifysamsungm13AddtocartFunctionality()[pri:0, instance:amazontestpack.Finalmobileverification@6572421]" started-at="2022-09-21T17:42:26 IST" name="Verifysamsungm13AddtocartFunctionality" finished-at="2022-09-21T17:43:14 IST" duration-ms="48003" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate an element using xpath=//input[@id='add-to-cart-button']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SAURABH', ip: '192.168.28.28', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//input[@id='add-to-cart-button']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SAURABH', ip: '192.168.28.28', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at Amazon.Addtocart.Addtocart1(Addtocart.java:28)
+at amazontestpack.Finalmobileverification.Verifysamsungm13AddtocartFunctionality(Finalmobileverification.java:78)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verifysamsungm13AddtocartFunctionality -->
+        <test-method is-config="true" signature="Logoutfromapplication()[pri:0, instance:amazontestpack.Finalmobileverification@6572421]" started-at="2022-09-21T17:43:14 IST" name="Logoutfromapplication" finished-at="2022-09-21T17:43:14 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logoutfromapplication -->
+        <test-method is-config="true" signature="CleanPOMObjects()[pri:0, instance:amazontestpack.Finalmobileverification@6572421]" started-at="2022-09-21T17:43:14 IST" name="CleanPOMObjects" finished-at="2022-09-21T17:43:14 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CleanPOMObjects -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:amazontestpack.Finalmobileverification@6572421]" started-at="2022-09-21T17:43:14 IST" name="closeBrowser" finished-at="2022-09-21T17:43:15 IST" duration-ms="1215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- amazontestpack.Finalmobileverification -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite2212 -->
+</testng-results>

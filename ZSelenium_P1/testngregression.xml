@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite2212" thread-count ="2" parallel ="classes">
+
+
+  <test name="ChromeTest">
+  <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="amazontestpack.SecondVerifivationmobile"/>
+      <class name="amazontestpack.Finalmobileverification"/>
+    
+    </classes>
+  </test> <!-- Test -->
+  
+ 
+  
+  
+  
+  
+</suite> <!-- Suite2212 -->
