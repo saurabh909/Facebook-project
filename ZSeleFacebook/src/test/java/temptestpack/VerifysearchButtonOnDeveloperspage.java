@@ -1,5 +1,6 @@
 package temptestpack;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -20,6 +21,7 @@ import facebookpages.LoginOrSignUpPage;
 import facebookpages.Privacyandpolicy;
 import facebookpages.SearchboxonDeveloperpage;
 import setup.Base;
+import utils.Utility1;
 
 public class VerifysearchButtonOnDeveloperspage extends Base {
 	 private WebDriver driver;
@@ -28,6 +30,7 @@ public class VerifysearchButtonOnDeveloperspage extends Base {
 	 private Developerspage developerspage; 
 	 private Privacyandpolicy privacyandpolicy;
 	 private SoftAssert soft;
+	 int testid;
 	 
 	@Parameters ("browser")
 	@BeforeTest
@@ -88,7 +91,10 @@ public class VerifysearchButtonOnDeveloperspage extends Base {
 					
 				
 		 @Test //(priority = 2)
-			public void verifySearchButtonFunction() {
+			public void verifySearchButtonFunction() throws IOException {
+			 
+			 testid = 3001;
+			 
 				System.out.println("TEST 1");
 				
 				searchboxpage.ClickonSearchbox();
@@ -108,6 +114,7 @@ public class VerifysearchButtonOnDeveloperspage extends Base {
 				
 				soft.assertAll(); // necessary to call 
 				
+				Utility1.capture(driver, testid);
 				
 //				if(url.equals("https://developers.facebook.com/products/app-ads/") && title.equals("Facebook App Ads | Facebook for Developers")) {    // final verification point
 //					System.out.println("Test Case is PASS");
@@ -118,7 +125,9 @@ public class VerifysearchButtonOnDeveloperspage extends Base {
 		 }
 		 
 		 @Test //(priority = 2)
-			public void verifyprivacyandpolicy() {
+			public void verifyprivacyandpolicy() throws IOException {
+			 
+			 testid = 4001;
 				System.out.println("TEST 2");
 				
 				searchboxpage.ClickonPrivacyandPolicy();
@@ -138,7 +147,7 @@ public class VerifysearchButtonOnDeveloperspage extends Base {
 				
 				soft.assertAll(); // necessary to call 
 				
-				
+				Utility1.capture(driver, testid);
 //				if(url.equals("https://mbasic.facebook.com/privacy/policy/printable/") && title.equals("Meta Privacy Policy – How Meta collects and uses user data")) {    // final verification point
 //					System.out.println("Test Case is PASS");
 //				}

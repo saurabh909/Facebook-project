@@ -1,7 +1,9 @@
 package temptestpack;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.bcel.classfile.Utility;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -21,6 +23,8 @@ import facebookpages.LoginOrSignUpPage;
 import facebookpages.Massanger;
 import facebookpages.Roomspage;
 import setup.Base;
+import utils.Utility1;
+
 
 public class VerifyRoomspage extends Base { //inherit  base c
 	 private WebDriver driver;
@@ -28,7 +32,9 @@ public class VerifyRoomspage extends Base { //inherit  base c
 	 private Massanger massanger;
 	 private LoginOrSignUpPage  loginOrSignUpPage;
 	 private SoftAssert soft;
-	
+	 int testid;
+	  
+	  
      @Parameters ("browser")
      @BeforeTest
      public void launchBrowser(String browserName) {
@@ -88,7 +94,8 @@ public class VerifyRoomspage extends Base { //inherit  base c
 		}
 	     
 		@Test //(priority = 2)
-		public void verifyGoBackToMessangerButton() {
+		public void verifyGoBackToMessangerButton() throws IOException {
+			testid = 1001;
 			System.out.println("TEST 1");
 			roomspage.GoBacktomassanger();
 			String url = driver.getCurrentUrl();
@@ -102,6 +109,7 @@ public class VerifyRoomspage extends Base { //inherit  base c
 			soft.assertEquals(url, "https://www.messenger.com/" );
 			soft.assertEquals(title, "Messenger");
 			soft.assertAll(); // necessary to call 
+			Utility1.capture(driver, testid);
 			
 			
 			
@@ -114,7 +122,8 @@ public class VerifyRoomspage extends Base { //inherit  base c
 		}
 		
 		@Test //(priority = 1)
-		public void verifyContactToHelpCenterButton() {
+		public void verifyContactToHelpCenterButton() throws IOException {
+			testid = 2001;
 			System.out.println("TEST 2");
 			roomspage.Contacthelpcenter();
 			String url1 = driver.getCurrentUrl();
@@ -129,7 +138,7 @@ public class VerifyRoomspage extends Base { //inherit  base c
 			soft.assertEquals(title, "Messenger Help Centre");
 			
 			soft.assertAll();  // necessary to call
-			
+			Utility1.capture(driver, testid);
 			
 			
 //			if(url1.equals("https://www.messenger.com/help") && title.equals("Messenger Help Centre")) {    // final verification point
