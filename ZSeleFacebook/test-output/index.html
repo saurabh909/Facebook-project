@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -122,26 +122,6 @@
                         <a href="#" panel-name="suite-Suitefb" title="temptestpack.VerifyRoomspage" class="method navigator-link" hash-for-method="verifyGoBackToMessangerButton">verifyGoBackToMessangerButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suitefb" title="temptestpack.VerifysearchButtonOnDeveloperspage" class="method navigator-link" hash-for-method="verifySearchButtonFunction">verifySearchButtonFunction</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suitefb" title="temptestpack.VerifysearchButtonOnDeveloperspage" class="method navigator-link" hash-for-method="verifySearchButtonFunction">verifySearchButtonFunction</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suitefb" title="temptestpack.VerifysearchButtonOnDeveloperspage" class="method navigator-link" hash-for-method="verifyprivacyandpolicy">verifyprivacyandpolicy</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suitefb" title="temptestpack.VerifysearchButtonOnDeveloperspage" class="method navigator-link" hash-for-method="verifyprivacyandpolicy">verifyprivacyandpolicy</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-Suitefb -->
                   </li>
                 </ul>
@@ -154,42 +134,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suitefb" class="panel Suitefb">
-          <div class="suite-Suitefb-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">temptestpack.VerifysearchButtonOnDeveloperspage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySearchButtonFunction">
-                  </a> <!-- verifySearchButtonFunction -->
-                  <span class="method-name">verifySearchButtonFunction</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySearchButtonFunction">
-                  </a> <!-- verifySearchButtonFunction -->
-                  <span class="method-name">verifySearchButtonFunction</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyprivacyandpolicy">
-                  </a> <!-- verifyprivacyandpolicy -->
-                  <span class="method-name">verifyprivacyandpolicy</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyprivacyandpolicy">
-                  </a> <!-- verifyprivacyandpolicy -->
-                  <span class="method-name">verifyprivacyandpolicy</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suitefb-class-passed -->
           <div class="suite-Suitefb-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -236,18 +180,19 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suitefb&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;extendReport.ExtentTestNGIReporterListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;ChromeTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;temptestpack.VerifyRoomspage&quot;/&gt;
-      &lt;class name=&quot;temptestpack.VerifysearchButtonOnDeveloperspage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ChromeTest --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;FirefoxTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;FireFox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;temptestpack.VerifyRoomspage&quot;/&gt;
-      &lt;class name=&quot;temptestpack.VerifysearchButtonOnDeveloperspage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- FirefoxTest --&gt;
 &lt;/suite&gt; &lt;!-- Suitefb --&gt;
@@ -261,10 +206,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">ChromeTest (2 classes)</span>
+                <span class="test-name">ChromeTest (1 class)</span>
               </li>
               <li>
-                <span class="test-name">FirefoxTest (2 classes)</span>
+                <span class="test-name">FirefoxTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -290,44 +235,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyprivacyandpolicy')
-data.setCell(0, 2, 'temptestpack.VerifysearchButtonOnDeveloperspage')
-data.setCell(0, 3, 47596);
+data.setCell(0, 1, 'verifyContactToHelpCenterButton')
+data.setCell(0, 2, 'temptestpack.VerifyRoomspage')
+data.setCell(0, 3, 22164);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifySearchButtonFunction')
-data.setCell(1, 2, 'temptestpack.VerifysearchButtonOnDeveloperspage')
-data.setCell(1, 3, 23919);
+data.setCell(1, 1, 'verifyContactToHelpCenterButton')
+data.setCell(1, 2, 'temptestpack.VerifyRoomspage')
+data.setCell(1, 3, 11793);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyprivacyandpolicy')
-data.setCell(2, 2, 'temptestpack.VerifysearchButtonOnDeveloperspage')
-data.setCell(2, 3, 23252);
+data.setCell(2, 1, 'verifyGoBackToMessangerButton')
+data.setCell(2, 2, 'temptestpack.VerifyRoomspage')
+data.setCell(2, 3, 1860);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyContactToHelpCenterButton')
+data.setCell(3, 1, 'verifyGoBackToMessangerButton')
 data.setCell(3, 2, 'temptestpack.VerifyRoomspage')
-data.setCell(3, 3, 19983);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyContactToHelpCenterButton')
-data.setCell(4, 2, 'temptestpack.VerifyRoomspage')
-data.setCell(4, 3, 16890);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifySearchButtonFunction')
-data.setCell(5, 2, 'temptestpack.VerifysearchButtonOnDeveloperspage')
-data.setCell(5, 3, 9075);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyGoBackToMessangerButton')
-data.setCell(6, 2, 'temptestpack.VerifyRoomspage')
-data.setCell(6, 3, 3910);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyGoBackToMessangerButton')
-data.setCell(7, 2, 'temptestpack.VerifyRoomspage')
-data.setCell(7, 3, 3664);
+data.setCell(3, 3, 1572);
 window.suiteTableData['Suitefb']= { tableData: data, tableDiv: 'times-div-Suitefb'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 37 seconds</span>
               <div id="times-div-Suitefb">
               </div> <!-- times-div-Suitefb -->
             </div> <!-- times-div -->
@@ -358,194 +287,81 @@ return data;
                 <span class="method-name">launchBrowser(Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">temptestpack.VerifysearchButtonOnDeveloperspage</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">launchBrowser(Chrome)</span>
-                <span class="method-start">3460 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">temptestpack.VerifyRoomspage</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">createPOMObjects</span>
-                <span class="method-start">4928 ms</span>
+                <span class="method-start">3140 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">openRoomspage</span>
-                <span class="method-start">5002 ms</span>
+                <span class="method-start">3198 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyContactToHelpCenterButton</span>
-                <span class="method-start">23996 ms</span>
+                <span class="method-start">43753 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">44189 ms</span>
+                <span class="method-start">65928 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">openRoomspage</span>
-                <span class="method-start">44229 ms</span>
+                <span class="method-start">65982 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyGoBackToMessangerButton</span>
-                <span class="method-start">62992 ms</span>
+                <span class="method-start">71539 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">66661 ms</span>
+                <span class="method-start">73401 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">CleanPOMObjects</span>
-                <span class="method-start">66677 ms</span>
+                <span class="method-start">73404 ms</span>
               </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">temptestpack.VerifysearchButtonOnDeveloperspage</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">createPOMObjects</span>
-                <span class="method-start">66682 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">OpenDeveloprspage</span>
-                <span class="method-start">66843 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifySearchButtonFunction</span>
-                <span class="method-start">173095 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">197016 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">OpenDeveloprspage</span>
-                <span class="method-start">197018 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyprivacyandpolicy</span>
-                <span class="method-start">204522 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">252121 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">cleanPOMObjects</span>
-                <span class="method-start">252122 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">temptestpack.VerifyRoomspage</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">252123 ms</span>
+                <span class="method-start">73408 ms</span>
               </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">temptestpack.VerifysearchButtonOnDeveloperspage</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">closedBrowser</span>
-                <span class="method-start">253725 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">temptestpack.VerifyRoomspage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">launchBrowser(FireFox)</span>
-                <span class="method-start">254679 ms</span>
+                <span class="method-start">73969 ms</span>
               </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">temptestpack.VerifysearchButtonOnDeveloperspage</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">launchBrowser(FireFox)</span>
-                <span class="method-start">285738 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">temptestpack.VerifyRoomspage</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">createPOMObjects</span>
-                <span class="method-start">297636 ms</span>
+                <span class="method-start">91900 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">openRoomspage</span>
-                <span class="method-start">297639 ms</span>
+                <span class="method-start">91903 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyContactToHelpCenterButton</span>
-                <span class="method-start">351660 ms</span>
+                <span class="method-start">123587 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">368552 ms</span>
+                <span class="method-start">135384 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">openRoomspage</span>
-                <span class="method-start">368554 ms</span>
+                <span class="method-start">135386 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyGoBackToMessangerButton</span>
-                <span class="method-start">375441 ms</span>
+                <span class="method-start">138211 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">379356 ms</span>
+                <span class="method-start">139787 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">CleanPOMObjects</span>
-                <span class="method-start">379358 ms</span>
+                <span class="method-start">139791 ms</span>
               </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">temptestpack.VerifysearchButtonOnDeveloperspage</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">createPOMObjects</span>
-                <span class="method-start">379363 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">OpenDeveloprspage</span>
-                <span class="method-start">379372 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifySearchButtonFunction</span>
-                <span class="method-start">439928 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">449005 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">OpenDeveloprspage</span>
-                <span class="method-start">449007 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyprivacyandpolicy</span>
-                <span class="method-start">456220 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logoutFromApplication</span>
-                <span class="method-start">479476 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">cleanPOMObjects</span>
-                <span class="method-start">479481 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">temptestpack.VerifyRoomspage</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">479483 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">temptestpack.VerifysearchButtonOnDeveloperspage</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">closedBrowser</span>
-                <span class="method-start">481383 ms</span>
+                <span class="method-start">139791 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
