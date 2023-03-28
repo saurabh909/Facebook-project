@@ -19,6 +19,10 @@ public class Base {
 		 return driver;
 		
 	}
+	public static WebDriver openOperaBrowser() {
+		 System.setProperty("webdriver.gecko.driver", "C:\\Users\\Saurabh Zend\\Desktop\\selinum\\geckodriver.exe"); 
+		 WebDriver driver = new OperaDriver();
+		 return driver;
 	
 		
 	//public static WebDriver openFireFoxBrowser() {
